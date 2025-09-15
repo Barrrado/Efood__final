@@ -207,7 +207,7 @@ const Pagamento = ({ onCloseCart, onClosePag }) => {
               />
             </FormCEP>
             <FormNumber>
-              <label htmlFor="year">Ano de Vencimento</label>
+              <label htmlFor="year">Ano</label>
               <YearStyle
                 required
                 type="number"

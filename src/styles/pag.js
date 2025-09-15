@@ -78,6 +78,10 @@ input[type='number']::-webkit-outer-spin-button {
 export const FormNumeroCartão = styled.div`
   grid-column: 1;
   width: 212px;
+
+  @media (max-width: 360px) {
+    width: 180px;
+  }
 `
 export const FormCVV = styled.div`
   grid-column: 2;
@@ -90,6 +94,11 @@ export const Codigo = styled.input`
   margin-top: 10px;
   margin-bottom: 5px;
   width: 87px;
+
+  @media (max-width: 360px) {
+    width: 60px;
+  }
+
 }
 input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
@@ -104,6 +113,9 @@ export const NumberCard = styled.input`
   margin-top: 10px;
   margin-bottom: 5px;
     width: 228px;
+      @media (max-width: 360px) {
+        width: 163px;
+  }
 }
 input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
@@ -117,13 +129,15 @@ export const YearStyle = styled.input`
   border: 0;
   margin-top: 10px;
   margin-bottom: 5px;
-   width: 161px;
-}
-input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-}
+  width: 161px;
 
+  @media (max-width: 360px) {
+    width: 80px;}
+  }
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
 `
 export const MonthStyle = styled.input`
   height: 32px;

@@ -41,4 +41,12 @@ export const Btn = styled.button`
     color: aliceblue;
     background-color: rgb(114, 40, 40);
   }
+  @media (max-width: 360px) {
+    width: 277px;
+  }
+`
+export const ConteinerFinal = styled.div`
+  @media (max-width: 360px) {
+    width: 277px;
+  }
 `

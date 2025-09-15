@@ -8,6 +8,9 @@ export const ConteinerEntrega = styled.div`
   display: flex;
   flex-direction: column;
   color: aliceblue;
+  @media (max-width: 360px) {
+    width: 277px;
+  }
 `
 
 export const BtnPara = styled.button`
@@ -83,6 +86,9 @@ export const NumberEnd = styled.input`
   margin-top: 10px;
   margin-bottom: 5px;
   width: 161px;
+    @media (max-width: 360px) {
+    width: 118px;
+  }
 }
 input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
@@ -98,6 +104,11 @@ export const CepEnd = styled.input`
   margin-top: 10px;
   margin-bottom: 5px;
    width: 150px;
+  @media (max-width: 360px) {
+        width: 119px;
+  }
+
+
 }
 input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {

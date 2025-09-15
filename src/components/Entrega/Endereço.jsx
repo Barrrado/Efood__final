@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-
 import Pagamento from '../Pagamentos/Pagamento'
 import { useDispatch } from 'react-redux'
 import { setDelivery } from '../../store/Chekout'

@@ -1,7 +1,13 @@
 import { useDispatch } from 'react-redux'
 import { clearCart } from '../../store/cart'
 import { resetCheckout } from '../../store/Chekout'
-import { ParagFim, H2Fim, ConteinerFim, Btn } from '../../styles/fim'
+import {
+  ParagFim,
+  H2Fim,
+  ConteinerFim,
+  Btn,
+  ConteinerFinal
+} from '../../styles/fim'
 
 const FinalPedido = ({ onCloseCart, orderId }) => {
   const dispatch = useDispatch()
@@ -16,7 +22,7 @@ const FinalPedido = ({ onCloseCart, orderId }) => {
     <>
       <ConteinerFim>
         {orderId && <H2Fim>Pedido Realizado - {orderId}</H2Fim>}
-        <div>
+        <ConteinerFinal>
           <ParagFim>
             Estamos felizes em informar que seu pedido já está em processo de
             preparação e, em breve, será entregue no endereço fornecido.
@@ -34,7 +40,7 @@ const FinalPedido = ({ onCloseCart, orderId }) => {
             Esperamos que desfrute de uma deliciosa e agradável experiência
             gastronômica. Bom apetite!
           </ParagFim>
-        </div>
+        </ConteinerFinal>
 
         <Btn onClick={Concluir}>Concluir</Btn>
       </ConteinerFim>
