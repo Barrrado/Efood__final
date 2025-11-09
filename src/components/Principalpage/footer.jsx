@@ -17,7 +17,7 @@ function Footer() {
       <FooterConteiner>
         <LogoFooter src={logofooter} alt="Logo" />
         <RedesConteiner>
-          <a href="https://github.com/Barrrado" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Barrrado" target="_blank" rel="noreferrer">
             <Redes src={git} alt="Git" />{' '}
           </a>
           <Redes src={face} alt="Face" />
